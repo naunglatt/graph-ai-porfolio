@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generative AI for Work & Research | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121933;
+      --accent1: #6ee7ff;
+      --accent2: #a78bfa;
+      --accent3: #34d399;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1b2555, transparent),
+                  radial-gradient(800px 500px at 90% 10%, #312e81, transparent),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: #020617;
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+      background: linear-gradient(90deg, #fff, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 0.6rem 1rem;
+      border-radius: 0.75rem;
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(6px);
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 5rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(90deg, var(--accent3), var(--accent1));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+    .about-me p {
+      margin-top: 0.5rem;
+      color: #d1d5db;
+    }
+
+    .highlight {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(167,139,250,0.15);
+      color: #e9d5ff;
+      font-size: 0.85rem;
+      margin: 0.25rem 0.25rem 0 0;
+    }
+
+    .week {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .week::after {
+      content: "";
+      position: absolute;
+      inset: auto -40% -40% auto;
+      width: 120%;
+      height: 120%;
+      background: radial-gradient(circle at bottom right, rgba(110,231,255,0.15), transparent 60%);
+    }
+
+    footer {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <div class="badge">Portfolio · Generative AI</div>
+      <h1>Generative AI for Work & Research</h1>
+      <p class="subtitle">
+        A personal portfolio documenting my learning journey, experiments, and reflections
+        from the <strong>Generative AI for Work & Research</strong> course — focused on
+        responsible, no‑code AI for productivity, research, and real‑world impact.
+      </p>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#course">About the Course</a>
+        <a href="#submissions">Weekly Submissions</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container grid grid-2">
+      <div class="card about-me">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I am <span class="highlight">Dr. Naung Latt Htun</span>, an Internal Medicine physician
+          with a strong interest in <span class="highlight">global health, clinical research, and
+          ethical AI applications</span>. My professional background spans Myanmar, Maldives, and
+          Brunei Darussalam, with experience in acute care, chronic disease management, and
+          telemedicine in conflict‑affected settings.
+        </p>
+        <p>
+          Alongside clinical work, I actively engage in research on infectious diseases and
+          public health topics, and I am exploring how <span class="highlight">generative AI can
+          responsibly enhance research workflows, literature synthesis, data analysis, and
+          scientific communication</span>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="section-title">Background & Interests</h3>
+        <div>
+          <span class="pill">Internal Medicine</span>
+          <span class="pill">Global Health</span>
+          <span class="pill">Clinical Research</span>
+          <span class="pill">Generative AI</span>
+          <span class="pill">AI for Research</span>
+          <span class="pill">Responsible AI</span>
+          <span class="pill">No‑Code Tools</span>
+          <span class="pill">Telemedicine</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="course">
+    <div class="container">
+      <div class="card">
+        <h2 class="section-title">About the Course</h2>
+        <p>
+          <strong>Generative AI for Work & Research</strong> is an intensive 8‑week live cohort
+          course designed to help professionals and researchers adopt AI tools responsibly
+          for real‑world tasks. The course emphasizes <span class="highlight">no‑code AI tools</span>
+          and ethical deployment rather than pure software engineering.
+        </p>
+        <p>
+          Core modules cover AI‑assisted document creation, automated data analysis, literature
+          review and text analysis, custom GPTs and chatbots, task automation, research
+          communication, and a capstone project. Throughout the program, the focus remains on
+          <span class="highlight">transparency, reproducibility, and responsible AI use</span>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="submissions">
+    <div class="container">
+      <h2 class="section-title">Weekly Submissions</h2>
+      <div class="grid grid-3">
+        <div class="card week">
+          <h3>Week 1</h3>
+          <p>Websites, documents & presentations using generative AI.</p>
+          <p class="muted">(Submission link coming soon)</p>
+        </div>
+        <div class="card week">
+          <h3>Week 2</h3>
+          <p>AI‑automated data analysis and reporting workflows.</p>
+          <p class="muted">(Submission link coming soon)</p>
+        </div>
+        <div class="card week">
+          <h3>Week 3</h3>
+          <p>Literature review, text analysis, and knowledge synthesis.</p>
+          <p class="muted">(Submission link coming soon)</p>
+        </div>
+        <div class="card week">
+          <h3>Week 4</h3>
+          <p>Custom GPTs, chatbots, and retrieval‑augmented systems.</p>
+          <p class="muted">(Submission link coming soon)</p>
+        </div>
+        <div class="card week">
+          <h3>Week 5</h3>
+          <p>AI agents and task automation for research workflows.</p>
+          <p class="muted">(Submission link coming soon)</p>
+        </div>
+        <div class="card week">
+          <h3>Capstone</h3>
+          <p>Final project showcasing a responsible AI solution.</p>
+          <p class="muted">(Submission link coming soon)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 · <span>Generative AI for Work & Research</span> Portfolio<br />
+      Built as part of a learning journey in responsible AI for research and practice.
+    </p>
+  </footer>
+
+</body>
+</html>
